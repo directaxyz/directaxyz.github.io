@@ -47,6 +47,13 @@ body {
   background: black;
 }
 
+.gallery-cell-roqe {
+  width: 25%;
+  height: auto;
+  margin-right: 10px;
+  background: #000000;
+}
+
 .gallery-cell {
   width: 25%;
   height: 150px;
@@ -113,12 +120,14 @@ body {
 
       <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'></div> -->
 
-      <div>
+      <div class="container">
         <div class="row">
-          <div class="col-lg-2 my-auto">
+          <div class="col-md-2 my-auto">
 
-            <div class="container">
-              <img src="img/roqe-logo-0.png" alt="" width="160" height="160">
+            <div>
+              <a href="index.html">
+                <img width="120" height="120" src="img/roqe-logo-0.png" alt="Roqe Media">
+              </a>
             </div>
 
           </div>
@@ -133,7 +142,7 @@ body {
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img width="100%" src="img/image-2.png">
-                  <div class="container">
+                  <div>
                     <div class="carousel-caption">
                       <!-- <p>
                         <a href="#">
@@ -145,7 +154,7 @@ body {
                 </div>
                 <div class="carousel-item">
                   <img width="100%" src="img/image-2.png">
-                  <div class="container">
+                  <div>
                     <div class="carousel-caption text-left">
                       <!-- <h1>Example headline.</h1>
                       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -159,7 +168,7 @@ body {
                 </div>
                 <div class="carousel-item">
                   <img width="100%" src="img/image-2.png">
-                  <div class="container">
+                  <div>
                     <div class="carousel-caption">
                       <!-- <h1>Another example headline.</h1>
                       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -188,112 +197,160 @@ body {
 
       <br>
     
-      <div class="row">
-        <div class="col-xl-2 my-auto">
-          <div class="container">
-            <div class="d-flex justify-content-start">
-              <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Interviews</h5></span>
-            </div>
-          </div>    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 my-auto">
+            <div>
+              <div class="d-flex justify-content-start">
+                <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Interviews</h5></span>
+              </div>
+            </div>    
+          </div>
+          <div class="col">
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+              <div class="gallery-cell-roqe">
+                <img src="img/clip-001.png" width="100%" height="auto"/>
+                <div class="card-body">
+                  <p class="card-text">Snowboarding</p>
+                </div>
+                <a href="play.html" class="stretched-link"></a>
+              </div>
+            </div>    
+          </div>
         </div>
-        <div class="col">
-          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-          </div>    
+      </div>
+
+      <br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 my-auto">
+            <div>
+              <div class="d-flex justify-content-start">
+                <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Podcasts</h5></span>
+              </div>
+            </div>    
+          </div>
+          <div class="col">
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+            </div>    
+          </div>
         </div>
       </div>
 
       <br>
-      <br>
 
-      <div class="row">
-        <div class="col-xl-2 my-auto">
-          <div class="container">
-            <div class="d-flex justify-content-start">
-              <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Podcasts</h5></span>
-            </div>
-          </div>    
-        </div>
-        <div class="col">
-          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-          </div>    
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-      <div class="row">
-        <div class="col-xl-2 my-auto">
-          <div class="container">
-            <div class="d-flex justify-content-start">
-              <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Guests</h5></span>
-            </div>
-          </div>    
-        </div>
-        <div class="col">
-          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-          </div>    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 my-auto">
+            <div>
+              <div class="d-flex justify-content-start">
+                <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Guests</h5></span>
+              </div>
+            </div>    
+          </div>
+          <div class="col">
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+            </div>    
+          </div>
         </div>
       </div>
 
-
-      <br>
       <br>
 
-      <div class="row">
-        <div class="col-xl-2 my-auto">
-          <div class="container">
-            <div class="d-flex justify-content-start">
-              <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Video Clips</h5></span>
-            </div>
-          </div>    
-        </div>
-        <div class="col">
-          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-            <div class="gallery-cell"></div>
-          </div>    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 my-auto">
+            <div>
+              <div class="d-flex justify-content-start">
+                <span><h5><img width="15" height="15" src="img/bullet-point-1.png">Video Clips</h5></span>
+              </div>
+            </div>    
+          </div>
+          <div class="col">
+            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+              <div class="gallery-cell"></div>
+            </div>    
+          </div>
         </div>
       </div>
 
 
+      <br>
 
+      <!--
 
       <div class="row">
-        <div class="col-lg-3 my-auto">
+        <div class="col-md-3 my-auto">
           
         </div>
         <div class="col">
 
         </div>
       </div>
-
+      -->
 
     
       <br>
