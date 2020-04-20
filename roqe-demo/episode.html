@@ -10,8 +10,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
     body { 
-      padding-top: 7rem;
-      padding-bottom: 3rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
       color: #ffffff;
       background-color: #000000	;
       background: url('img/roqe-background.jpg') no-repeat center center fixed;
@@ -21,9 +21,14 @@
       -o-background-size: cover;
     }
 
+    hr.solid {
+      padding-top: 0rem;
+      border-top: 1px solid #ffffff;
+    }
+
     footer {
       padding-top: 2rem;
-      padding-bottom: 3rem;
+      padding-bottom: 0rem;
     }
 
     footer p {
@@ -57,10 +62,10 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom">
+    <nav class="navbar navbar-expand-md">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img width="70" height="70" src="img/roqe-logo.png" alt="Roqe Media">
+          <img width="100" height="auto" src="img/roqe-logo.png" alt="Roqe Media">
         </a>
         <a href="#">
           <img width="100" height="auto" src="img/Subscribe.jpg" alt="Roqe Media">
@@ -83,21 +88,23 @@
             </a>
           </div>
         </div>
-        <div class="col-9">
-
+        <div class="col-8">
         </div>
-        <div class="col-1">
-
+        <div class="col-1 my-auto">
+          <div class="flex justify-content-end">
+          <a href="#">
+            <img width="100" height="auto" src="img/Subscribe.jpg" alt="Roqe Media" class="justify-content-end">
+          </a>
+          </div>
         </div>
 
       </div> -->
 
       <div class="row justify-content-center">
 
-        <div class="col-12 col-md-9">
+        <div class="col-10 col-md-9">
           <div>
-            <!-- <span>Season 1</span> - <span>Episode 1</span> -->
-            <span>Episode 1</span>
+            <span>Season 1</span> : <span>Episode 1</span>
           </div>
           <div class="py-2">
             <h4 class="episode-title">Hamed Esmaeilion</h4>
@@ -116,27 +123,21 @@
 
     </div>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <!-- <a href="#">Back to top</a> -->
-        </p>
-        <img width="120" height="auto" src="img/roqe-media-logo.jpg" alt="Roqe Media">
-        <!-- <div class="d-flex justify-content-end">
-          <small>© 2020 Roqe Media. All Rights Reserved.</small>
-        </div>
-        <div class="d-flex justify-content-end">
-          <small>Powered by directa.xyz</small>
-        </div> -->
-      </div>
-    </footer>
-    <!-- <footer class="main-footer">
+    <div class="py-3"></div>
+
+    <footer class="main-footer">
       <div class="container">
         <div class="d-flex justify-content-center">
-          <img width="173" height="auto" src="img/roqe-logo-4.png" alt="Roqe Media">
+          <img width="140" height="auto" src="img/roqe-media-logo-1.jpg" alt="Roqe Media">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-muted">Conversations from, to, and about the Iranian diaspora.</p>
+        </div>
+        <div class="py-4 d-flex justify-content-center">
+          <small class="text-muted">Powered by directa.xyz</small>
         </div>
       </div>
-    </footer> -->
+    </footer>
       
   </main>
 
