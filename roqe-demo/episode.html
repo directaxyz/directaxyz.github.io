@@ -6,8 +6,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
   <style>
     body { 
       padding-top: 0rem;
@@ -55,6 +55,39 @@
 
     .episode-title{
       color: rgb(150, 19, 19); 
+    }
+
+    .gallery {
+      background: black;
+    }
+
+    .gallery-cell-roqe {
+      width: 33%;
+      height: auto;
+      margin-right: 10px;
+      background: #000000;
+    }
+
+    .gallery-cell {
+      width: 25%;
+      height: 150px;
+      margin-right: 10px;
+      background: #8C8;
+      counter-increment: gallery-cell;
+    }
+
+    /* .gallery-cell.is-selected {
+      background: #ED2;
+    } */
+
+    /* cell number */
+    .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 150px;
+      font-size: 80px;
+      color: white;
     }
       
   </style>
@@ -109,8 +142,11 @@
           <div class="py-2">
             <h4 class="episode-title">Hamed Esmaeilion</h4>
           </div>
-          <div>
+          <!-- <div>
             <video preload="metadata" controls controlsList="nodownload" src="http://d20bwu873pdje8.cloudfront.net/IMG_0009.MP4" preload="none" width="100%" height="auto"></video>
+          </div> -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OIoH5ULr_2k?rel=0" allowfullscreen></iframe>
           </div>
           <div class="py-2">
             <p>An interview with Hamed Esmaeilion Conversations from, to, and about the Iranian diaspora. Hosted by Jian Ghomeshi.</p>
@@ -120,6 +156,26 @@
 
       </div>
 
+      <div class="row py-4 justify-content-center">
+        <div class="col-10 col-md-9">
+          <div>
+            <span>Episodes</span>
+          </div>
+          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "pageDots": false, "contain": true }'>
+            <div class="gallery-cell-roqe">
+              <img src="img/bnr-episode-1.png" width="100%" height="auto"/>
+              <small class="text-muted">Episode 1 - Hamed Esmaeilion</small>
+              <a href="play.html" class="stretched-link"></a>
+            </div>
+            <div class="gallery-cell-roqe">
+              <img src="img/bnr-episode-2.png" width="100%" height="auto"/>
+              <small class="text-muted">Episode 2 - Fainaz Lari</small>
+              <a href="play.html" class="stretched-link"></a>
+            </div>
+          </div>    
+        </div>
+      </div>
+
 
     </div>
 
@@ -127,19 +183,28 @@
 
     <footer class="main-footer">
       <div class="container">
-        <div class="d-flex justify-content-center">
-          <img width="140" height="auto" src="img/roqe-media-logo-1.jpg" alt="Roqe Media">
-        </div>
-        <div class="d-flex justify-content-center">
-          <p class="text-muted">Conversations from, to, and about the Iranian diaspora.</p>
-        </div>
-        <div class="py-4 d-flex justify-content-center">
-          <small class="text-muted">Powered by directa.xyz</small>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <div class="d-flex justify-content-center">
+              <img width="140" height="auto" src="img/roqe-media-logo-1.jpg" alt="Roqe Media">
+            </div>
+            <div class="d-flex justify-content-center">
+              <p class="text-muted" style="text-align: center;">Conversations from, to, and about the Iranian diaspora.</p>
+            </div>
+            <div class="py-4 d-flex justify-content-center">
+              <small class="text-muted">Powered by Directa.xyz</small>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
       
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 </html>
